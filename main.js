@@ -12,7 +12,7 @@ selection = selection.toLowerCase();
 
 selection = selection.replace(/\s/g, '');
 
-try{
+try {
   var audio=document.createElement("audio");
   audio.src=`https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/${selection}.mp3`;
   audio.loop=false;
@@ -20,6 +20,17 @@ try{
 } catch(a) {
   console.log("Unable to play audio.")
 }
+
+document.registerEventHandler("click", () => {
+  try {
+    var audio=document.createElement("audio");
+    audio.src=`https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/${selection}.mp3`;
+    audio.loop=false;
+    audio.play()
+  } catch(a) {
+    console.log("Unable to play audio.")
+  }
+})
 
 var css=`\n* {\n\tcursor: url('${cursors[selection]}'), auto;\n}`;
 style=document.createElement("style");
