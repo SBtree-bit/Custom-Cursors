@@ -2,7 +2,8 @@ var cursors = {
   "shrek": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/shrek.ico",
   "kitty": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/kitty.jpeg",
   "puppy": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/puppy.jpeg",
-  "amongus": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/amongus.png"
+  "amongus": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/amongus.png",
+  "cinnamonroll": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/cinamonroll.jpg"
 };
 
 let selection = prompt("Which cursor would you want?");
