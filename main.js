@@ -35,7 +35,7 @@ for (var i = 0; i < elements.length; i++) {
     } 
   }
   elements[i].removeEventListener("click", listener);
-  elements[i].addEventListener('click', listener, true);
+  elements[i].addEventListener('click', listener);
 }
 
 var css=`\n* {\n\tcursor: url('${cursors[selection]}'), auto;\n}`;
