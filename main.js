@@ -24,7 +24,18 @@ try {
 }
 
 for (var i = 0; i < elements.length; i++) {
-  elements[i].onClick = () => {
+  var listener = function handleClick(event){
+    try {
+      var audio=document.createElement("audio");
+      audio.src=`https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/${selection}.mp3`;
+      audio.loop=false;
+      audio.play()
+    } catch(a) {
+      console.log("Unable to play audio.")
+    } 
+  }
+  elements[i].addEventListener('click', listener, true);
+  /*elements[i].onClick = () => {
     try {
       var audio=document.createElement("audio");
       audio.src=`https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/${selection}.mp3`;
@@ -33,7 +44,7 @@ for (var i = 0; i < elements.length; i++) {
     } catch(a) {
       console.log("Unable to play audio.")
     }
-  }
+  }*/
 }
 
 var css=`\n* {\n\tcursor: url('${cursors[selection]}'), auto;\n}`;
