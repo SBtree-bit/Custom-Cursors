@@ -3,7 +3,7 @@ var cursors = {
   "kitty": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/kitty.jpeg",
   "puppy": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/puppy.jpeg",
   "amongus": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/amongus.png",
-  "cinamonroll": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/cinamonroll.jpg"
+  "cinamoroll": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/cinamoroll.jpg"
 };
 
 var elements = document.getElementsByTagName("*");
