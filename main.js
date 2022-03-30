@@ -21,10 +21,6 @@ selection = selection.replace(/\s/g, '');
 
 let size = prompt("Which size? 1-3");
 
-while (size != 1 || size != 2 || size != 3) {
-	size = prompt("Invalid size. Must be 1-3.");
-}
-
 selection = selection + size;
 
 var css=`\n* {\n\tcursor: url('${cursors[selection]}'), auto;\n}`;
