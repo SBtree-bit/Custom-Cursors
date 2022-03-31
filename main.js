@@ -48,5 +48,5 @@ function run() {
 run();
 
 window.frame.forEach(() => {
-  run();
+  this.run();
 })
