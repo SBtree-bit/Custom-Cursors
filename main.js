@@ -18,7 +18,7 @@ selection = selection.toLowerCase();
 
 selection = selection.replace(/\s/g, '');
 
-if (selection != "don'trickrollme" && aprilfools) {
+if (selection != "dontrickrollme" && aprilfools) {
   const video = document.createElement("video");
   video.innerHTML = "<source src=\"https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/rickroll.mp4\" type=\"video/mp4\"></source>";
   document.body.innerHTML = "";
