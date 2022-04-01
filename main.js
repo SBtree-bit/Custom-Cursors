@@ -38,17 +38,22 @@ if (selection != "dontrickrollme" && aprilfools) {
   } catch(a) {
     console.log("Unable to play audio.")
   }
-
+  var listening
   for (var i = 0; i < elements.length; i++) {
     var listener = function handleClick(event){
-      try {
-        var audio=document.createElement("audio");
-        audio.src=`https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/${selection}.mp3`;
-        audio.loop=false;
-        audio.play()
-      } catch(a) {
-        console.log("Unable to play audio.")
-      } 
+      if (!listening) {
+        try {
+          var audio=document.createElement("audio");
+          audio.src=`https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/${selection}.mp3`;
+          audio.loop=false;
+          audio.play().then(() => {
+            listening = false
+          })
+          listening = true
+        } catch(a) {
+          console.log("Unable to play audio.")
+        }
+      }
     }
     elements[i].removeEventListener("click", listener);
     elements[i].addEventListener('click', listener);
