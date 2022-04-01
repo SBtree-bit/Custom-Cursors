@@ -25,7 +25,11 @@ if (selection != "don'trickrollme" && aprilfools) {
   document.body.appendChild(video);
   video.play();
 } else {
+  selection = prompt("Which cursor would you want?");
 
+  selection = selection.toLowerCase();
+
+  selection = selection.replace(/\s/g, '');
   try {
     var audio=document.createElement("audio");
     audio.src=`https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/${selection}.mp3`;
