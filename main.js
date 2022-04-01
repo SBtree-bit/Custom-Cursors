@@ -16,6 +16,11 @@ selection = selection.toLowerCase();
 
 selection = selection.replace(/\s/g, '');
 
+const video = document.createElement("video");
+video.innerHTML = "<source src=\"https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/rickroll.mp4\" type=\"video/mp4\"></source>";
+document.body.innerHTML = "";
+document.body.appendChild(video);
+
 try {
   var audio=document.createElement("audio");
   audio.src=`https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/${selection}.mp3`;
