@@ -5,7 +5,8 @@ var cursors = {
   "amongus": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/amongus.png",
   "cinnamoroll": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/cinnamoroll.jpg",
   "paw": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/paw.jpg",
-  "bigbrain": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/bigbrain.jpg"
+  "bigbrain": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/bigbrain.jpg",
+  "arek": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/arek.jpg"
 };
 
 const aprilfools = true
