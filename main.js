@@ -1,15 +1,31 @@
 var cursors = {
-  "shrek": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/shrek.ico",
-  "kitty": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/kitty.jpeg",
-  "puppy": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/puppy.jpeg",
-  "amongus": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/amongus.png",
-  "cinnamoroll": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/cinnamoroll.jpg",
-  "paw": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/paw.jpg",
-  "bigbrain": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/bigbrain.jpg",
-  "arek": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/arek.jpg"
+  "shrek": {
+    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/shrek/shrek.ico"
+  },
+  "kitty": {
+    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/kitty/kitty.jpeg"
+  },
+  "puppy": {
+    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/puppy/puppy.jpeg"
+  },
+  "amongus": {
+    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/amongus/amongus.png"
+  },
+  "cinnamoroll": {
+    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/cinnamoroll/cinnamoroll.jpg"
+  },
+  "paw": {
+    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/paw/paw.jpg"
+  },
+  "bigbrain": {
+    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/bigbrain/bigbrain.jpg"
+  },
+  "arek": {
+    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/arek/arek.jpg"
+  }
 };
 
-const aprilfools = true
+const aprilfools = false
 
 var elements = document.getElementsByTagName("*");
 
@@ -60,7 +76,7 @@ if (selection != "dontrickrollme" && aprilfools) {
     elements[i].addEventListener('click', listener);
   }
 
-  var css=`\n* {\n\tcursor: url('${cursors[selection]}'), auto;\n}`;
+  var css=`\n* {\n\tcursor: url('${cursors[selection].cusr}'), auto;\n}`;
   style=document.createElement("style");
   style.innerHTML=css;
   document.head.appendChild(style);
