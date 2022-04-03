@@ -1,15 +1,19 @@
 var cursors = {
   "shrek": {
-    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/shrek/cursor.ico"
+    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/shrek/cursor.ico",
+    "audio": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/shrek/audio.mp3"
   },
   "kitty": {
-    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/kitty/cursor.jpeg"
+    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/kitty/cursor.jpeg",
+    "audio": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/kitty/audio.mp3"
   },
   "puppy": {
-    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/puppy/cursor.jpeg"
+    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/puppy/cursor.jpeg",
+    "audio": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/puppy/audio.mp3"
   },
   "amongus": {
-    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/amongus/cursor.png"
+    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/amongus/cursor.png",
+    "audio": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/amongus/audio.mp3"
   },
   "cinnamoroll": {
     "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/cinnamoroll/cursor.jpg"
@@ -18,7 +22,8 @@ var cursors = {
     "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/paw/cursor.jpg"
   },
   "bigbrain": {
-    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/bigbrain/cursor.jpg"
+    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/bigbrain/cursor.jpg",
+    "audio": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/bigbrain/audio.mp3"
   },
   "arek": {
     "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/arek/cursor.jpg"
@@ -49,7 +54,7 @@ if (selection != "dontrickrollme" && aprilfools) {
   selection = selection.replace(/\s/g, '');
   try {
     var audio=document.createElement("audio");
-    audio.src=`https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/${selection}.mp3`;
+    audio.src=cursors[selection][audio];
     audio.loop=false;
     audio.play()
   } catch(a) {
@@ -61,7 +66,7 @@ if (selection != "dontrickrollme" && aprilfools) {
       if (!listening) {
         try {
           var audio=document.createElement("audio");
-          audio.src=`https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/${selection}.mp3`;
+          audio.src=cursors[selection][audio];
           audio.loop=false;
           audio.play().then(() => {
             listening = false
@@ -76,7 +81,7 @@ if (selection != "dontrickrollme" && aprilfools) {
     elements[i].addEventListener('click', listener);
   }
 
-  var css=`\n* {\n\tcursor: url('${cursors[selection].cusr}'), auto;\n}`;
+  var css=`\n* {\n\tcursor: url('${cursors[selection].cursor}'), auto;\n}`;
   style=document.createElement("style");
   style.innerHTML=css;
   document.head.appendChild(style);
