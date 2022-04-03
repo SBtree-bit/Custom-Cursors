@@ -1,27 +1,27 @@
 var cursors = {
   "shrek": {
-    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/shrek/shrek.ico"
+    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/shrek/cursor.ico"
   },
   "kitty": {
-    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/kitty/kitty.jpeg"
+    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/kitty/cursor.jpeg"
   },
   "puppy": {
-    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/puppy/puppy.jpeg"
+    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/puppy/cursor.jpeg"
   },
   "amongus": {
-    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/amongus/amongus.png"
+    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/amongus/cursor.png"
   },
   "cinnamoroll": {
-    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/cinnamoroll/cinnamoroll.jpg"
+    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/cinnamoroll/cursor.jpg"
   },
   "paw": {
-    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/paw/paw.jpg"
+    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/paw/cursor.jpg"
   },
   "bigbrain": {
-    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/bigbrain/bigbrain.jpg"
+    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/bigbrain/cursor.jpg"
   },
   "arek": {
-    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/arek/arek.jpg"
+    "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/arek/cursor.jpg"
   }
 };
 
