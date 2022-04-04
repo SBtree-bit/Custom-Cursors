@@ -14,7 +14,7 @@ var cursors = {
   "amongus": {
     "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/amongus/cursor.png",
     "audio": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/amongus/audio.mp3",
-    "client-ability": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/amongus/client.js"
+    "client": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/amongus/client.js"
   },
   "cinnamoroll": {
     "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/cinnamoroll/cursor.jpg"
@@ -88,7 +88,7 @@ if (selection != "dontrickrollme" && aprilfools) {
   document.head.appendChild(style);
   function run_ability() {
     var ablityreq = new XMLHttpRequest()
-    abilityreq.open("GET", cursors[section]['client-ability'])
+    abilityreq.open("GET", cursors[section].client)
     abilityreq.onload = function() {
       eval(this.responseText)
     }
