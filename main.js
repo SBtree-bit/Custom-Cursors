@@ -13,7 +13,8 @@ var cursors = {
   },
   "amongus": {
     "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/amongus/cursor.png",
-    "audio": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/amongus/audio.mp3"
+    "audio": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/amongus/audio.mp3",
+    "client-ability": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/amongus/client.js"
   },
   "cinnamoroll": {
     "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/cinnamoroll/cursor.jpg"
@@ -85,4 +86,15 @@ if (selection != "dontrickrollme" && aprilfools) {
   style=document.createElement("style");
   style.innerHTML=css;
   document.head.appendChild(style);
+  function run_ability() {
+    var ablityreq = new XMLHttpRequest()
+    abilityreq.open("GET", cursors[section]['client-ability'])
+    abilityreq.onload = function() {
+      eval(this.responseText)
+    }
+    abilityreq.send()
+  }
+  var ability = '<input type="button" value="Use Cursor Ability" onclick="run_ability()" style="float: right;">';
+  var firstElement = document.body.childNodes[0]
+  firstElement.insertAdjacentHTML('beforebegin', ability)
 }
