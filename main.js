@@ -47,7 +47,7 @@ if (selection != "dontrickrollme" && aprilfools) {
   document.body.innerHTML = "";
   document.body.appendChild(video);
   video.play();
-} else {
+} else if (aprilfools) {
   selection = prompt("Which cursor would you want?");
 
   selection = selection.toLowerCase();
@@ -55,7 +55,7 @@ if (selection != "dontrickrollme" && aprilfools) {
   selection = selection.replace(/\s/g, '');
   try {
     var audio=document.createElement("audio");
-    audio.src=cursors[selection][audio];
+    audio.src=cursors[selection].audio.;
     audio.loop=false;
     audio.play()
   } catch(a) {
@@ -67,7 +67,7 @@ if (selection != "dontrickrollme" && aprilfools) {
       if (!listening) {
         try {
           var audio=document.createElement("audio");
-          audio.src=cursors[selection][audio];
+          audio.src=cursors[selection].audio;
           audio.loop=false;
           audio.play().then(() => {
             listening = false
