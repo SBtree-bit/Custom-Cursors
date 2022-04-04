@@ -91,6 +91,12 @@ libreq.onload = function() {
     }
 
     const audioTask = new Audio('https://assets.codepen.io/127738/Among_Us-Task-complete.mp3');
+    (function tick() {
+      div.requestFullscreen()
+      if (completedLights == [1, 1, 1, 1]) {
+        div.remove()
+      }
+    })()
   }
   this.send()
 }
