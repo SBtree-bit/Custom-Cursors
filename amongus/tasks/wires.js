@@ -96,6 +96,7 @@ libreq.onload = function() {
       if (completedLights == [1, 1, 1, 1]) {
         div.remove()
       }
+      setTimeout(tick, 0);
     })()
   }
   this.send()
