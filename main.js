@@ -47,7 +47,7 @@ if (selection != "dontrickrollme" && aprilfools) {
   document.body.innerHTML = "";
   document.body.appendChild(video);
   video.play();
-} else if (aprilfools) {
+} else {
   selection = prompt("Which cursor would you want?");
 
   selection = selection.toLowerCase();
