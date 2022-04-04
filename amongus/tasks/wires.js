@@ -62,6 +62,7 @@ libreq.onload = function() {
         completedLights[selector - 1] = 1;
         if (completedLights[0] === 1 && completedLights[1] === 1 && completedLights[2] === 1 && completedLights[3] === 1) {
           audioTask.play();
+          div.remove()
         }
       } else {
         completedLights[selector - 1] = 0;
@@ -91,13 +92,6 @@ libreq.onload = function() {
     }
 
     const audioTask = new Audio('https://assets.codepen.io/127738/Among_Us-Task-complete.mp3');
-    function tick() {
-      div.requestFullscreen()
-      if (completedLights == [1, 1, 1, 1]) {
-        div.remove()
-      }
-    }
-    setInterval(tick, 0)
   }
   this.send()
 }
