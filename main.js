@@ -31,6 +31,8 @@ var cursors = {
   }
 };
 
+alert("works")
+
 const aprilfools = false
 
 var elements = document.getElementsByTagName("*");
