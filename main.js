@@ -29,7 +29,7 @@ var cursors = {
   "arek": {
     "cursor": "https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/arek/cursor.jpg"
   }
-};
+//};
 
 alert("works")
 
@@ -42,14 +42,14 @@ let selection = prompt("Which cursor would you want?");
 selection = selection.toLowerCase();
 
 selection = selection.replace(/\s/g, '');
-
+/*
 if (selection != "dontrickrollme" && aprilfools) {
   const video = document.createElement("video");
   video.innerHTML = "<source src=\"https://raw.githubusercontent.com/SBtree-bit/Custom-Cursors/main/rickroll.mp4\" type=\"video/mp4\"></source>";
   document.body.innerHTML = "";
   document.body.appendChild(video);
   video.play();
-} else {
+} else {*/
   selection = prompt("Which cursor would you want?");
 
   selection = selection.toLowerCase();
